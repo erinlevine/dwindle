@@ -1,0 +1,79 @@
+/*nav ul a,
+nav .brand-logo {
+  color: white;
+}*/
+
+.navBackground {
+  background-color: #183059;
+}
+
+.header1{
+  color: #F6F4F3;
+  font-family: 'Vibur', cursive;
+  font-size: 800%;
+}
+
+.header2{
+  color: #F6F4F3;
+  font-size: 200%;
+}
+
+#download-button{
+  background-color: #F6F4F3;
+  color: #F03A47;
+  font-style: bold;
+  font-size: 16px;
+}
+
+.parallax{
+  background-color: #F03A47;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.brand-logo{
+  font-family: ;
+}
