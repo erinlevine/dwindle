@@ -1,14 +1,16 @@
-/*nav ul a,
+nav ul a,
 nav .brand-logo {
-  color: white;
-}*/
+  color: #F6F4F3;
+  font-family: 'Vibur', cursive;
+  font-size: 40px;
+}
 
 body{
   background-color: #F6F4F3;
 }
 
 .navBackground {
-  background-color: #183059;
+  background-color: #F03A47;
 }
 
 .header1{
