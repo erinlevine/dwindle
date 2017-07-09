@@ -40,9 +40,73 @@
 
 
         <div class="row center">
-          <a href="#" id="buttons" class="waves-effect waves-light btn">Sign Up</a>
-          <a href="#" id="buttons" class="waves-effect waves-light btn">Log In  </a>
+
+          <a class="waves-effect waves-light btn" id="buttons" onclick="$('#modal1').modal('open');">Sign Up</a>
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+
+                  <form>
+                  <form action="/action_page.php" method="post">
+                    <h2 class="signUpTitle">Sign Up with Dwindle</h2>
+
+                    <div class="row">
+                      <form class="col s12">
+                        <div class="row">
+                          <div class="input-field col s6">
+                            <input placeholder="Username" id="username" type="text" class="validate">
+                            <label for="username"></label>
+                          </div>
+
+                          <div class="input-field col s6">
+                            <input placeholder="First Name" id="first_name" type="text" class="validate">
+                            <label for="first_name"></label>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input placeholder="Email" id="email" type="email" class="validate">
+                        <label for="email"></label>
+                      </div>
+
+                      <div class="input-field col s6">
+                        <input placeholder="Password" id="password" type="password" class="validate">
+                        <label for="password"></label>
+                      </div>
+                    </div>
+
+
+
+
+                  </form>
+                </form>
+              </form>
+
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat" id="signUpAgree">Agree</a>
+                </div>
+              </div>
+            </div>
+
+
+          <a class="waves-effect waves-light btn" id="buttons" onclick="$('#modal2').modal('open');">Log In</a>
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                  <form>
+                  <form action="/action_page.php" method="post">
+                    <h4>Sign Up with Dwindle</h4>
+                    <br>
+                    <p>Hi</p>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Agree</a>
+                </div>
+              </div>
+
         </div>
+
         <br><br>
 
       </div>

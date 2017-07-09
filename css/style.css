@@ -56,12 +56,24 @@ h5{
   color: #183059;
 }
 
+.signUpTitle{
+  color: #F03A47;
+}
+
 p{
   color: #183059;
 }
 
 .infoContainer{
   background-color: #449DD1;
+}
+
+.dashboardContainer{
+  background-color: #AF5B5B;
+}
+
+.navIcons{
+  color: #F6F4F3;
 }
 
 .parallax{
