@@ -3,6 +3,10 @@ nav .brand-logo {
   color: white;
 }*/
 
+body{
+  background-color: #F6F4F3;
+}
+
 .navBackground {
   background-color: #183059;
 }
@@ -31,6 +35,27 @@ nav .brand-logo {
 
 #index-banner{
   margin-bottom: 15px;
+}
+
+.section{
+  align-self: center;
+  padding-left: 10px;
+}
+
+.iconContainer{
+  background-color: #F6F4F3;
+}
+
+.material-icons{
+  color: #183059;
+}
+
+h5{
+  color: #183059;
+}
+
+p{
+  color: #183059;
 }
 
 .parallax{
