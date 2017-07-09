@@ -61,8 +61,32 @@ h5{
   font-family: 'Vibur', cursive;
 }
 
-.photoBtn{
-  background-color: #F03A47;
+#username{
+  color: #183059;
+}
+
+#firstName{
+  color: #183059;
+}
+
+#email{
+  color: #183059;
+}
+
+#password{
+  color: #183059;
+}
+
+#height{
+  color: #183059;
+}
+
+#currentWeight{
+  color: #183059;
+}
+
+#goalWeight{
+  color: #183059;
 }
 
 .datePicker{
