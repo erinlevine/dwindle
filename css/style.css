@@ -58,6 +58,10 @@ p{
   color: #183059;
 }
 
+.infoContainer{
+  background-color: #449DD1;
+}
+
 .parallax{
   background-color: #F03A47;
 }
@@ -105,6 +109,11 @@ p {
 
 footer.page-footer {
   margin: 0;
+  background-color: #183059;
+}
+
+.connectText {
+  color: #F6F4F3;
 }
 
 .brand-logo{
