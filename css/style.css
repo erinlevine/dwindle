@@ -5,9 +5,9 @@ nav .brand-logo {
   font-size: 40px;
 }
 
-body{
+/*body{
   background-color: #F6F4F3;
-}
+}*/
 
 .navBackground {
   background-color: #F03A47;
@@ -110,14 +110,6 @@ p{
   background-color: #449DD1;
 }
 
-.dashboardContainer{
-  background-color: #AF5B5B;
-}
-
-.containerDashboard{
-  background-color: #449DD1;
-}
-
 .header2{
   font: #F6F4F3;
   font-family: 'Roboto';
@@ -125,6 +117,14 @@ p{
 
 .navIcons{
   color: #F6F4F3;
+}
+
+.dashboardContainer{
+  background-color: #449DD1;
+}
+
+.container1{
+  background-color: #F6F4F3;
 }
 
 nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
