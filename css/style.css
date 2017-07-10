@@ -127,14 +127,17 @@ p{
   background-color: #F6F4F3;
 }
 
-nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
-    color: #F6F4F3;
-    display: block;
-    font-size: 24px;
+
+.parallax {
+  background-color: #F03A47;
 }
 
-.parallax{
-  background-color: #F03A47;
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    display: block;
+    font-size: 24px;
+    height: 56px;
+    line-height: 56px;
+    color: #F6F4F3;
 }
 
 p {
