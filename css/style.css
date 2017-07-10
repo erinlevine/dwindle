@@ -127,6 +127,13 @@ p{
   background-color: #F6F4F3;
 }
 
+.red.lighten-1 {
+    background-color: #183059 !important;
+}
+
+.white-text {
+    color: #F6F4F3 !important;
+}
 
 .parallax {
   background-color: #F03A47;
