@@ -66,31 +66,35 @@ h5{
   font-family: 'Vibur', cursive;
 }
 
-#username{
+#firstName-input{
   color: #183059;
 }
 
-#firstName{
+#lastName-input{
   color: #183059;
 }
 
-#email{
+#email-input{
   color: #183059;
 }
 
-#password{
+#password-input{
   color: #183059;
 }
 
-#height{
+#height-input{
   color: #183059;
 }
 
-#currentWeight{
+#datePicker-input{
   color: #183059;
 }
 
-#goalWeight{
+#currentWeight-input{
+  color: #183059;
+}
+
+#goalWeight-input{
   color: #183059;
 }
 
@@ -108,6 +112,15 @@ p{
 
 .dashboardContainer{
   background-color: #AF5B5B;
+}
+
+.containerDashboard{
+  background-color: #449DD1;
+}
+
+.header2{
+  font: #F6F4F3;
+  font-family: 'Roboto';
 }
 
 .navIcons{
