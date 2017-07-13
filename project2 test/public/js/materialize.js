@@ -1,3 +1,4 @@
+
 /*!
  * Materialize v0.99.0 (http://materializecss.com)
  * Copyright 2014-2017 Materialize
@@ -6598,7 +6599,6 @@ DatePicker.prototype.validate = function( type, dateObject, options ) {
             // Return only integers for enabled weekdays.
             return _.isInteger( value )
         }).length/*,
-
         safety = 100*/
 
 

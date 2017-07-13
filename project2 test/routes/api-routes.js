@@ -4,21 +4,42 @@ var passport = require("../config/passport");
 
 module.exports = function(app) {
 
+  app.get("/api/signup", function(req, res){
+    db.User.findAll({
+      include: [{model: db.userStats}]
+    }).then(function(dbUser){
+      res.json(dbUser);
+    });
+  });
 
-  // app.get("/api/login", function(req, res){
+  app.get("/api/signup/:id", function(req, res){
+    db.User.findOne({
+      where: {
+        id: req.params.id
+      },
+      include: [db.userStats]
+    }).then(function(dbUser){
+      res.json(dbUser);
+    });
+  });
 
-  // })
   app.post("/api/login", passport.authenticate("local"), function(req, res) {
     
-    res.redirect("/dashboard");
-  
+      res.json("/dashboard");
   });
   //Route to create users
   app.post("/api/signup", function(req, res) {
     console.log(req.body);
+
     db.User.create({
       email: req.body.email,
-      password: req.body.password
+      password: req.body.password,
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      dateOfBirth: req.body.dateOfBirth,
+      height: req.body.height,
+      initialWeight: req.body.initialWeight,
+      goalWeight: req.body.goalWeight
     }).then(function(data) {
       console.log('===== db enter ======')
       console.log(data)
@@ -26,6 +47,18 @@ module.exports = function(app) {
     }).catch(function(err) {
       console.log('ERROR+++++++')
       console.log(err)
+      res.status(422).json(err);
+    });
+  });
+
+  app.post("/api/signup", function(req,res){
+    db.Stats.create({
+      currentWeight: req.body.initialWeight,
+      initialWeight: req.body.initialWeight,
+      goalWeight: req.body.goalWeight
+    }).then(function(data){
+      res.redirect(307, "/api/login");
+    }).catch(function(err){
       res.status(422).json(err);
     });
   });
@@ -47,7 +80,13 @@ module.exports = function(app) {
       // Sending back a password, even a hashed password, isn't a good idea
       res.json({
         email: req.user.email,
-        id: req.user.id
+        id: req.user.id,
+        firstName: req.user.firstName,
+        lastName: req.user.lastName,
+        dateOfBirth: req.user.dateOfBirth,
+        height: req.user.height,
+        initialWeight: req.user.initialWeight,
+        goalWeight: req.user.goalWeight
       });
     }
   });
